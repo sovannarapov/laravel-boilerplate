@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.autoIndent": "full",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-inventory.json": "file:///PS/ims/ansible/roles/deploy/tasks/deploy.yml"
+  }
+}

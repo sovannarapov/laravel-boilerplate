@@ -1,0 +1,48 @@
+name: Deployment
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        description: Select the environment
+        required: true
+        options: ['staging', 'production']
+        default: 'staging'
+      deploy_infra:
+        type: boolean
+        required: true
+        default: false
+        description: Deploy infra
+
+jobs:
+  ############# STAGING #############
+  deploy_stg:
+    if: github.event.inputs.environment == 'staging' && github.ref == 'refs/heads/main'
+    name: Build and Sync [STAGING]
+    runs-on: ${{ matrix.os }}
+    concurrency: deployment
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+      - name: 🛎 Check Out
+        uses: actions/checkout@v3
+
+      # Implement your code here
+
+  ############# PRODUCTION #############
+  deploy_prod:
+    if: github.event.inputs.environment == 'production' && github.ref == 'refs/heads/main'
+    name: Build and Sync [PRODUCTION]
+    runs-on: ${{ matrix.os }}
+    concurrency: deployment
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+      - name: 🛎 Check Out
+        uses: actions/checkout@v3
+
+      # Implement your code here

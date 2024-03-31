@@ -1,0 +1,50 @@
+version: 2
+updates:
+  # Fetch and update latest `npm` packages
+  - package-ecosystem: composer
+    directory: '/'
+    schedule:
+      interval: daily
+      time: '00:00'
+      timezone: 'Asia/Phnom_Penh'
+    open-pull-requests-limit: 10
+    reviewers:
+      - Silak-mb
+    assignees:
+      - Silak-mb
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+  # Fetch and update latest `npm` packages
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+      time: '00:00'
+      timezone: 'Asia/Phnom_Penh'
+    open-pull-requests-limit: 10
+    reviewers:
+      - Silak-mb
+    assignees:
+      - Silak-mb
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+  # Fetch and update latest `github-actions` pkgs
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: daily
+      time: '00:00'
+      timezone: 'Asia/Phnom_Penh'
+    open-pull-requests-limit: 10
+    reviewers:
+      - Silak-mb
+    assignees:
+      - Silak-mb
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope

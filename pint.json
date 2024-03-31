@@ -1,0 +1,9 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "single_quote": true,
+        "concat_space": {
+            "spacing": "one"
+        }
+    }
+}

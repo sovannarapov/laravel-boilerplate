@@ -15,7 +15,7 @@
     "autoprefixer": "^10.4.2",
     "axios": "^0.27",
     "eslint": "^8.23.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",

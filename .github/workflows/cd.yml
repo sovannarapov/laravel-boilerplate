@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: 🛎 Check Out
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Implement your code here
 
@@ -43,6 +43,6 @@ jobs:
 
     steps:
       - name: 🛎 Check Out
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Implement your code here
